@@ -41,13 +41,33 @@ const HeroSection = () => {
         ))}
       </div>
       
-      {/* Kuromi Sticker */}
+      {/* Kuromi Stickers */}
       <div className="absolute top-8 right-8 z-20">
         <img 
           src={kuromoSticker} 
           alt="Kuromi" 
           className="kuromi-sticker w-16 h-16 md:w-20 md:h-20 opacity-80"
         />
+      </div>
+      
+      {/* Additional Kuromi stickers */}
+      <div className="absolute bottom-8 left-8 z-20">
+        <img 
+          src={kuromoSticker} 
+          alt="Kuromi" 
+          className="kuromi-sticker w-12 h-12 md:w-14 md:h-14 opacity-60 animate-pulse"
+        />
+      </div>
+      
+      {/* Spider-Man web elements */}
+      <div className="absolute top-1/4 left-12 text-pure-white/20 text-3xl z-10">
+        🕷️
+      </div>
+      <div className="absolute top-1/3 right-16 text-pure-white/20 text-2xl z-10">
+        🕸️
+      </div>
+      <div className="absolute bottom-1/3 left-1/4 text-pure-white/15 text-xl z-10">
+        🕷️
       </div>
       
       {/* Main Content */}

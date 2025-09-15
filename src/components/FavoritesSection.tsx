@@ -6,25 +6,25 @@ import zoroImage from '@/assets/zoro-card.jpg';
 const FavoritesSection = () => {
   const movies = [
     {
-      title: "Your Name",
-      genre: "Romance/Anime",
+      title: "Titanic",
+      genre: "Romance/Drama",
       rating: "⭐⭐⭐⭐⭐",
-      description: "A beautiful story about connection and love that transcends time",
+      description: "An epic love story that will never let go, just like my love for you",
       color: "bg-gradient-to-br from-romantic-pink to-passionate-red"
     },
     {
-      title: "Spirited Away",
-      genre: "Fantasy/Anime",
+      title: "Laila Majnu",
+      genre: "Romance/Drama",
       rating: "⭐⭐⭐⭐⭐",
-      description: "Magic and wonder in every frame, just like our love story",
+      description: "A tale of eternal love that knows no boundaries, like ours",
       color: "bg-gradient-to-br from-soft-pink to-blush-pink"
     },
     {
-      title: "A Silent Voice",
-      genre: "Drama/Anime",
+      title: "Spider-Man",
+      genre: "Action/Romance",
       rating: "⭐⭐⭐⭐⭐",
-      description: "About redemption, forgiveness, and the power of understanding",
-      color: "bg-gradient-to-br from-blush-pink to-romantic-pink"
+      description: "She's my Gwen - my heart, my universe, my everything 🕷️💕",
+      color: "bg-gradient-to-br from-blush-pink to-passionate-red"
     }
   ];
 
@@ -48,8 +48,10 @@ const FavoritesSection = () => {
   return (
     <section className="section-container">
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-romantic font-bold text-foreground mb-4">
+        <h2 className="text-4xl font-romantic font-bold text-foreground mb-4 flex items-center justify-center gap-3">
+          <span className="text-2xl">🖤</span>
           Our Favorites
+          <span className="text-2xl">🕷️</span>
         </h2>
         <p className="text-lg text-muted-foreground">
           The movies and characters that bring us together
@@ -58,8 +60,8 @@ const FavoritesSection = () => {
       
       {/* Movies Section */}
       <div className="mb-16">
-        <h3 className="text-2xl font-romantic font-semibold text-center mb-8 text-passionate-red">
-          Movies We Love
+        <h3 className="text-2xl font-romantic font-semibold text-center mb-8 text-passionate-red flex items-center justify-center gap-2">
+          🎬 Movies We Love 🕸️
         </h3>
         <div className="grid md:grid-cols-3 gap-6">
           {movies.map((movie, index) => (
@@ -90,8 +92,8 @@ const FavoritesSection = () => {
       
       {/* Anime Characters Section */}
       <div>
-        <h3 className="text-2xl font-romantic font-semibold text-center mb-8 text-passionate-red">
-          Characters We Adore
+        <h3 className="text-2xl font-romantic font-semibold text-center mb-8 text-passionate-red flex items-center justify-center gap-2">
+          🖤 Characters We Adore 🕷️
         </h3>
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {animeCharacters.map((character, index) => (

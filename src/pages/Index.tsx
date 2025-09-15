@@ -4,7 +4,7 @@ import AudioPlayer from '@/components/AudioPlayer';
 import HeartfeltNote from '@/components/HeartfeltNote';
 import MemoriesSection from '@/components/MemoriesSection';
 import FavoritesSection from '@/components/FavoritesSection';
-import GallerySection from '@/components/GallerySection';
+
 import MiniGames from '@/components/MiniGames';
 import CountdownSection from '@/components/CountdownSection';
 
@@ -39,8 +39,6 @@ const Index = () => {
         {/* Favorites */}
         <FavoritesSection />
         
-        {/* Gallery */}
-        <GallerySection />
         
         {/* Mini Games */}
         <MiniGames />
