@@ -1,73 +1,150 @@
-# Welcome to your Lovable project
+# Jannuuu - A Romantic Website ✨
 
-## Project info
+A beautiful, mobile-first romantic website dedicated to love, memories, and special moments. Built with modern web technologies and designed with an anime-inspired aesthetic.
 
-**URL**: https://lovable.dev/projects/abce97d8-c15b-4276-a52d-47402c08cc27
+## 🌟 Features
 
-## How can I edit this code?
+- **Responsive Design**: Mobile-first approach with beautiful animations
+- **Hero Section**: Full-screen romantic background with floating hearts
+- **Audio Player**: Background music with playlist support
+- **Heartfelt Notes**: Personal messages using nicknames and terms of endearment
+- **Memory Chips**: Interactive tags highlighting special moments
+- **Favorites Section**: Movies and anime characters we love
+- **Photo Gallery**: Swipeable image gallery with captions
+- **Mini Games**: Catch the Hearts game and Love Quiz
+- **Love Countdown**: Days counter since relationship began
+- **Kuromi Accents**: Tasteful anime character integration
 
-There are several ways of editing your application.
+## 🎨 Design System
 
-**Use Lovable**
+- **Colors**: Pink, white, red base with blue/black accents
+- **Fonts**: Dancing Script for romantic titles, Poppins for body text
+- **Animations**: Floating hearts, gentle bounces, pulse effects
+- **Mobile-First**: Optimized for all screen sizes
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/abce97d8-c15b-4276-a52d-47402c08cc27) and start prompting.
+## 🚀 Quick Start
 
-Changes made via Lovable will be committed automatically to this repo.
+1. **Clone the repository**
+   ```bash
+   git clone <your-repo-url>
+   cd jannuuu-website
+   ```
 
-**Use your preferred IDE**
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+4. **Open in browser**
+   Navigate to `http://localhost:8080`
 
-Follow these steps:
+## 📸 Customizing Your Content
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Replace Images
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+1. **Hero Background**: Replace `src/assets/hero-romantic.jpg`
+2. **Gallery Photos**: Update image paths in `src/components/GallerySection.tsx`
+3. **Kuromi Sticker**: Replace `src/assets/kuromi-sticker.png`
+4. **Couple Images**: Replace `src/assets/eren-mikasa-couple.jpg` and `src/assets/zoro-card.jpg`
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Update Audio
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+1. **Primary Song**: Add your audio file and update the audio source in `src/components/AudioPlayer.tsx`
+2. **Playlist**: Modify the playlist array with your favorite songs
 
-**Edit a file directly in GitHub**
+### Personalize Content
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. **Names & Nicknames**: Update in `src/components/HeartfeltNote.tsx`
+2. **Memories**: Modify the memories array in `src/components/MemoriesSection.tsx`
+3. **Favorites**: Update movies and anime in `src/components/FavoritesSection.tsx`
+4. **Start Date**: Change the date in `src/components/CountdownSection.tsx`
 
-**Use GitHub Codespaces**
+## 🌐 Deployment
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### GitHub Pages
 
-## What technologies are used for this project?
+1. **Enable GitHub Pages**
+   - Go to repository Settings → Pages
+   - Select "Deploy from a branch"
+   - Choose "main" branch and "/ (root)" folder
 
-This project is built with:
+2. **Update GitHub Pages Settings**
+   ```bash
+   npm run build
+   git add dist/
+   git commit -m "Add build files"
+   git push origin main
+   ```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+3. **Access your site**
+   Your site will be available at: `https://yourusername.github.io/repository-name`
 
-## How can I deploy this project?
+### Netlify (Recommended)
 
-Simply open [Lovable](https://lovable.dev/projects/abce97d8-c15b-4276-a52d-47402c08cc27) and click on Share -> Publish.
+1. **Connect Repository**
+   - Go to [netlify.com](https://netlify.com)
+   - Click "New site from Git"
+   - Connect your GitHub repository
 
-## Can I connect a custom domain to my Lovable project?
+2. **Build Settings**
+   - Build command: `npm run build`
+   - Publish directory: `dist`
 
-Yes, you can!
+3. **Deploy**
+   - Click "Deploy site"
+   - Your site will be live with a custom URL
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Vercel
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+1. **Import Project**
+   - Go to [vercel.com](https://vercel.com)
+   - Click "New Project"
+   - Import your GitHub repository
+
+2. **Deploy**
+   - Vercel will automatically detect the build settings
+   - Click "Deploy"
+
+## 📱 PWA Features
+
+The site includes a `manifest.json` for Progressive Web App functionality:
+- Add to Home Screen capability
+- Offline-ready design
+- Mobile app-like experience
+
+## 🛠️ Technical Stack
+
+- **Framework**: React 18 with TypeScript
+- **Styling**: Tailwind CSS with custom design system
+- **Build Tool**: Vite
+- **Icons**: Lucide React
+- **Animations**: CSS keyframes and Tailwind animations
+
+## 💕 Customization Tips
+
+1. **Colors**: Modify the design system in `src/index.css` and `tailwind.config.ts`
+2. **Animations**: Add new keyframes in the CSS for custom effects
+3. **Components**: Each section is modular - easy to modify or remove
+4. **Mobile**: Test on various devices - the design is mobile-first
+
+## 🎵 Audio Setup
+
+Due to browser autoplay policies:
+1. Users may need to interact with the page before audio plays
+2. Consider hosting audio files on a CDN for better performance
+3. Test audio across different browsers and devices
+
+## 📝 License
+
+This project is created with love and is free to use for personal romantic websites.
+
+---
+
+**Made with 💕 for Jannuuu**
+
+*Every pixel crafted with love, every word written from the heart*
